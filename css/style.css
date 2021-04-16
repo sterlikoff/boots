@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    color: #333;
+}
+
+.container {
+    text-align: center;
+}
+
+.catalog {
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    text-align: left;
+    padding: 40px 0;
+}
+
+.item {
+    width: 300px;
+    font-size: 15px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;;
+}
+
+.item > div {
+    padding: 30px 25px;
+    border: 1px solid #e2e2e2;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.item h2 {
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0 0 10px;
+}
+
+.item .description {
+    color: #666;
+    margin: 0 0 20px;
+}
+
+.item .price {
+    font-size: 35px;
+    display: grid;
+    grid-template-columns: auto 50px;
+}
+
+.item .price p {
+    line-height: 40px;
+}
+
+.item .price small {
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 0 0 5px;
+    line-height: normal;
+}
+
+.button {
+    border: 0;
+    border-radius: 2px;
+    line-height: 40px;
+    min-width: 50px;
+    background-color: #4ED17B;
+    background-image: url("../images/cart.svg");
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    outline: none;
+    cursor: pointer;
+}
